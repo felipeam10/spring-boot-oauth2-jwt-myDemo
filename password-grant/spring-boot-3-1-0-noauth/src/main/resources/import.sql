@@ -4,7 +4,7 @@ INSERT INTO tb_user (name, email, password) VALUES ('Maria', 'maria@gmail.com', 
 INSERT INTO tb_product (name) VALUES ('TV');
 INSERT INTO tb_product (name) VALUES ('Computer');
 
-
+-- o padrão do spring security é ROLE_xxx
 INSERT INTO tb_role (authority) VALUES ('ROLE_OPERATOR');
 INSERT INTO tb_role (authority) VALUES ('ROLE_ADMIN');
 

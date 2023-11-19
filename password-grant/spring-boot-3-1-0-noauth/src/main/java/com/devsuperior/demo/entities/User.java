@@ -115,9 +115,15 @@ public class User implements UserDetails {
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
     }
-
-
     public void addRole(Role role) {
         roles.add(role);
+    }
+    public boolean hasRole(String roleName) {
+        for (Role role : roles) {
+            if(role.getAuthority().equals(roleName)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
